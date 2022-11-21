@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card mx-auto" style="width: 25rem;">
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group"><%= "#{params[:replay]}" %></li>
+        <li class="list-group"><p>-You</p></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card mx-auto" style="width: 25rem;">
+    <div class="card-body ">
+      <ul class="list-group list-group-flush">
+        <li class="list-group"><%= "#{@replay}" %></li>
+        <li class="list-group"><p>-Your Coach</p></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mx-auto">
+    <%= link_to "Ask another question", ask_path %>
+  </div>
+</div>
